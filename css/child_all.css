@@ -1,0 +1,228 @@
+* {
+    /* border: 1px black solid; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 120vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.bg {
+    background-image: url(../images/Another/Rnis.jpg);
+    z-index: -999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    opacity: 0.3;
+    filter: blur(2px);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    z-index: 999999999;
+}
+
+#Nav {
+    min-height: 240vh;
+    width: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px black solid;
+    box-shadow: 0 0 10px slategray;
+    border-radius: 10px 10px 10px 0;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    list-style: none;
+    padding: 5px;
+}
+
+a:hover {
+    color: rgb(28, 218, 154);
+}
+
+#Nav img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Nav #cl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    min-height: 20px;
+    width: 100%;
+    border: 1px black solid;
+    background-color: rgb(248, 240, 229, 0.5);
+    border-radius: 5px;
+    margin: 12px;
+    padding: 6px;
+    transition: all .5s;
+}
+
+#Nav #cl:hover {
+    background-color: rgba(224, 251, 216, 0.6)
+}
+
+.cls {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.cls li {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cls li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cls li :hover {
+    background-color: rgb(211, 252, 252);
+}
+
+#cl :hover .cls {
+    display: block;
+}
+
+#Main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#Main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#Main header {
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+}
+
+#Main header article {
+    width: 100%;
+    display: flex;
+    font-size: 50px;
+    font-family: fantasy;
+    justify-content: space-around;
+}
+
+#Main header img {
+    height: 80px;
+    width: 120px;
+    z-index: 1000000;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+#Main header article h3 {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 200px;
+    height: 100%;
+}
+
+.library {
+    height: 100%;
+    margin-top: 50px;
+    background-color: rgb(255, 247, 235, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.elem img:hover {
+    width: 110%;
+    height: 110%;
+}
+
+.elem img {
+    transition: all .3s;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px rgb(137, 134, 134);
+}
+
+.elem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 250px;
+    margin: 30px;
+    transition: all .3s;
+}
+
+.elem a {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#lead {
+    width: 100%;
+}
